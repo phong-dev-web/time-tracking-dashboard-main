@@ -8,8 +8,6 @@ body {
     color: white;
 }
 .main {
-    display: grid;
-    grid-template-rows: repeat(7, 20vh);
     margin: 10%;
 }
 .header {
@@ -18,6 +16,7 @@ body {
     grid-template-rows: 70% 30%;
     background-color: hsl(235, 46%, 20%);
     border-radius: 20px;
+    margin-bottom: 20px;
 }
 .head {
     display: flex;
@@ -25,13 +24,73 @@ body {
     padding: 10%; 
     align-items: center;
     justify-content: center;
-    font-size: 15px;
-    border-;
+    font-size: 11px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;                                  
     background-color: hsl(246, 80%, 60%);
 }
 .head img {
     margin-right: 20px;
-    height: 80%;
+    height: 65px;
     border: 3px solid white;
     border-radius: 50%;
+}
+.time {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.button-time {
+    background: none;
+    border: none;
+    color: hsl(236, 100%, 87%);
+    font-size: 15px;
+    cursor: pointer;
+}
+.button-time:hover {
+    color: white;
+}
+.content {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+}
+.box-index {
+    height: 15vh;
+    display: flex;
+    margin-bottom: 20px;
+    background-color: hsl(15, 100%, 70%);
+    background-image: url('images/icon-work.svg');
+    background-repeat: no-repeat;
+    background-position: top right;
+    border-radius: 20px;
+    position: relative;
+    cursor: pointer ; 
+    align-items: flex-end;
+}
+.infor {
+    position: absolute;
+    height: 70%;
+    width: 100%;;
+    background-color: hsl(235, 46%, 20%);
+    border-radius: 20px;
+}
+#play {
+    background-color: hsl(195, 74%, 62%);
+    background-image: url('images/icon-play.svg');
+}
+#study {
+    background-color: hsl(348, 100%, 68%);
+    background-image: url('images/icon-study.svg');
+}
+#exercise {
+    background-color: hsl(145, 58%, 55%);
+    background-image: url('images/icon-exercise.svg');
+}
+#social {
+    background-color: hsl(264, 64%, 52%);
+    background-image: url('images/icon-social.svg');
+}
+#self-care {
+    background-color: hsl(43, 84%, 65%);
+    background-image: url('images/icon-self-care.svg');
 }
